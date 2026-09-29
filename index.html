@@ -9,7 +9,7 @@
     content="width=device-width, initial-scale=1, viewport-fit=cover"
   >
 
-  <meta name="theme-color" content="#ede1cb">
+  <meta name="theme-color" content="#c8b79d">
 
   <meta
     name="description"
@@ -46,7 +46,7 @@
 <body>
 
   <!-- =====================================================
-       INTRO - NEWSPAPER OPENING
+       INTRO
   ====================================================== -->
 
   <div
@@ -54,49 +54,68 @@
     id="newspaperIntro"
   >
 
-    <div class="intro-shadow"></div>
+    <div class="intro-background" aria-hidden="true"></div>
 
 
-    <div class="folded-paper">
+    <div class="intro-stage">
 
-      <div class="fold-half fold-top">
+      <div
+        class="folded-paper"
+        id="foldedPaper"
+      >
 
-        <div class="fold-line"></div>
+        <!-- TOP HALF -->
 
-        <span class="fold-kicker">
-          إصدار خاص
-        </span>
+        <div class="paper-half paper-half-top">
 
-        <strong>
-          الخبر السعيد
-        </strong>
+          <div class="paper-inner">
+
+            <span class="paper-edition">
+              إصدار خاص
+            </span>
+
+            <h1>
+              الخبر السعيد
+            </h1>
+
+            <div class="paper-rule"></div>
+
+          </div>
+
+        </div>
+
+
+        <!-- BOTTOM HALF -->
+
+        <div class="paper-half paper-half-bottom">
+
+          <div class="paper-inner paper-inner-bottom">
+
+            <span class="paper-small">
+              خبر يستحق الصفحة الأولى
+            </span>
+
+            <span class="paper-issue">
+              العدد الخاص
+            </span>
+
+            <strong class="paper-event">
+              ليلة حنة
+            </strong>
+
+            <strong
+              class="paper-groom"
+              data-bind="groomName"
+            >
+              حسن
+            </strong>
+
+          </div>
+
+        </div>
 
       </div>
 
-
-      <div class="fold-half fold-bottom">
-
-        <span>
-          خبر يستحق الصفحة الأولى
-        </span>
-
-      </div>
-
-    </div>
-
-
-    <div class="intro-copy">
-
-      <span>
-        العدد الخاص
-      </span>
-
-      <h1>
-        ليلة حنة
-        <strong data-bind="groomName">
-          حسن
-        </strong>
-      </h1>
 
       <button
         type="button"
@@ -108,7 +127,10 @@
           افتح الجريدة
         </span>
 
-        <svg viewBox="0 0 24 24" aria-hidden="true">
+        <svg
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
           <path d="M6 12h12M14 7l5 5-5 5"/>
         </svg>
 
@@ -124,17 +146,14 @@
   ====================================================== -->
 
   <div class="paper-background" aria-hidden="true">
-
     <div class="paper-noise"></div>
-
   </div>
 
 
   <main>
 
-
     <!-- =================================================
-         NEWSPAPER HEADER
+         FRONT PAGE
     ================================================== -->
 
     <section class="front-page section">
@@ -163,7 +182,10 @@
 
         <!-- MASTHEAD -->
 
-        <header class="masthead reveal" data-reveal>
+        <header
+          class="masthead reveal"
+          data-reveal
+        >
 
           <span class="masthead-small">
             صحيفة المناسبات السعيدة
@@ -174,13 +196,9 @@
           </h1>
 
           <div class="masthead-rule">
-
             <span></span>
-
             <i></i>
-
             <span></span>
-
           </div>
 
           <p>
@@ -190,9 +208,12 @@
         </header>
 
 
-        <!-- BREAKING NEWS -->
+        <!-- BREAKING -->
 
-        <div class="breaking-strip reveal" data-reveal>
+        <div
+          class="breaking-strip reveal"
+          data-reveal
+        >
 
           <span>
             خبر عاجل
@@ -205,11 +226,14 @@
         </div>
 
 
-        <!-- MAIN HEADLINE -->
+        <!-- MAIN STORY -->
 
         <article class="main-story">
 
-          <div class="story-label reveal" data-reveal>
+          <div
+            class="story-label reveal"
+            data-reveal
+          >
 
             <span>
               الصفحة الأولى
@@ -228,6 +252,7 @@
             </span>
 
             يحتفل
+
             <br>
 
             بليلة الحنة
@@ -244,7 +269,10 @@
           </p>
 
 
-          <div class="headline-meta reveal" data-reveal>
+          <div
+            class="headline-meta reveal"
+            data-reveal
+          >
 
             <span>
               بقلم هيئة الفرح
@@ -261,7 +289,10 @@
 
           <div class="story-columns">
 
-            <div class="story-column reveal" data-reveal>
+            <div
+              class="story-column reveal"
+              data-reveal
+            >
 
               <p>
                 أعلن
@@ -281,7 +312,10 @@
             </div>
 
 
-            <div class="story-column reveal" data-reveal>
+            <div
+              class="story-column reveal"
+              data-reveal
+            >
 
               <p>
                 ويسره أن يشارك الأصدقاء
@@ -310,7 +344,7 @@
 
 
     <!-- =================================================
-         ISSUE DETAILS
+         DETAILS
     ================================================== -->
 
     <section
@@ -320,7 +354,10 @@
 
       <div class="issue-sheet">
 
-        <div class="issue-heading reveal" data-reveal>
+        <div
+          class="issue-heading reveal"
+          data-reveal
+        >
 
           <span>
             بيانات العدد
@@ -336,16 +373,17 @@
         <div class="issue-grid">
 
 
-          <!-- ISSUE -->
-
-          <article class="issue-item reveal" data-reveal>
+          <article
+            class="issue-item reveal"
+            data-reveal
+          >
 
             <span class="issue-number">
               01
             </span>
 
             <small>
-              الإصدار
+              اليوم
             </small>
 
             <strong data-bind="dayName">
@@ -355,9 +393,10 @@
           </article>
 
 
-          <!-- DATE -->
-
-          <article class="issue-item reveal" data-reveal>
+          <article
+            class="issue-item reveal"
+            data-reveal
+          >
 
             <span class="issue-number">
               02
@@ -374,9 +413,10 @@
           </article>
 
 
-          <!-- TIME -->
-
-          <article class="issue-item reveal" data-reveal>
+          <article
+            class="issue-item reveal"
+            data-reveal
+          >
 
             <span class="issue-number">
               03
@@ -393,9 +433,10 @@
           </article>
 
 
-          <!-- LOCATION -->
-
-          <article class="issue-item reveal" data-reveal>
+          <article
+            class="issue-item reveal"
+            data-reveal
+          >
 
             <span class="issue-number">
               04
@@ -423,21 +464,27 @@
 
 
     <!-- =================================================
-         FEATURE DATE
+         DATE
     ================================================== -->
 
     <section class="date-feature section">
 
       <div class="date-newspaper-box">
 
-        <span class="date-feature-label reveal" data-reveal>
+        <span
+          class="date-feature-label reveal"
+          data-reveal
+        >
           التاريخ في صدر الصفحة
         </span>
 
 
         <div class="date-layout">
 
-          <div class="date-day reveal" data-reveal>
+          <div
+            class="date-day reveal"
+            data-reveal
+          >
 
             <span>
               اليوم
@@ -450,7 +497,10 @@
           </div>
 
 
-          <div class="date-big reveal" data-reveal>
+          <div
+            class="date-big reveal"
+            data-reveal
+          >
 
             <strong data-bind="dateDay">
               23
@@ -459,7 +509,10 @@
           </div>
 
 
-          <div class="date-month reveal" data-reveal>
+          <div
+            class="date-month reveal"
+            data-reveal
+          >
 
             <strong data-bind="dateMonth">
               أكتوبر
@@ -479,14 +532,17 @@
 
 
     <!-- =================================================
-         VENUE STORY
+         VENUE
     ================================================== -->
 
     <section class="venue-section section">
 
       <div class="venue-sheet">
 
-        <div class="venue-heading reveal" data-reveal>
+        <div
+          class="venue-heading reveal"
+          data-reveal
+        >
 
           <span>
             خبر الموقع
@@ -501,7 +557,10 @@
 
         <div class="venue-content">
 
-          <div class="venue-main reveal" data-reveal>
+          <div
+            class="venue-main reveal"
+            data-reveal
+          >
 
             <span>
               تقام المناسبة في
@@ -518,17 +577,27 @@
           </div>
 
 
-          <div class="venue-address reveal" data-reveal>
+          <div
+            class="venue-address reveal"
+            data-reveal
+          >
 
             <div class="venue-pin">
 
-              <svg viewBox="0 0 24 24" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
 
                 <path
                   d="M12 21s7-5.3 7-12a7 7 0 1 0-14 0c0 6.7 7 12 7 12Z"
                 />
 
-                <circle cx="12" cy="9" r="2.5"/>
+                <circle
+                  cx="12"
+                  cy="9"
+                  r="2.5"
+                />
 
               </svg>
 
@@ -551,10 +620,13 @@
           >
 
             <span>
-              اقرأ الخبر على الخريطة
+              افتح الموقع على الخريطة
             </span>
 
-            <svg viewBox="0 0 24 24" aria-hidden="true">
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
               <path d="M5 12h14M14 7l5 5-5 5"/>
             </svg>
 
@@ -568,12 +640,15 @@
 
 
     <!-- =================================================
-         QUOTE
+         EDITORIAL
     ================================================== -->
 
     <section class="editorial-section section">
 
-      <div class="editorial-copy reveal" data-reveal>
+      <div
+        class="editorial-copy reveal"
+        data-reveal
+      >
 
         <span>
           كلمة التحرير
@@ -581,7 +656,9 @@
 
         <h2>
           الأخبار الجميلة
+          <br>
           تصبح أجمل
+          <br>
           عندما يشاركها الأحبة
         </h2>
 
@@ -604,7 +681,10 @@
 
       <div class="countdown-sheet">
 
-        <div class="countdown-heading reveal" data-reveal>
+        <div
+          class="countdown-heading reveal"
+          data-reveal
+        >
 
           <span>
             الوقت المتبقي لصدور الحدث
@@ -622,7 +702,10 @@
           id="countdown"
         >
 
-          <div class="countdown-item reveal" data-reveal>
+          <div
+            class="countdown-item reveal"
+            data-reveal
+          >
 
             <strong id="days">
               00
@@ -635,7 +718,10 @@
           </div>
 
 
-          <div class="countdown-item reveal" data-reveal>
+          <div
+            class="countdown-item reveal"
+            data-reveal
+          >
 
             <strong id="hours">
               00
@@ -648,7 +734,10 @@
           </div>
 
 
-          <div class="countdown-item reveal" data-reveal>
+          <div
+            class="countdown-item reveal"
+            data-reveal
+          >
 
             <strong id="minutes">
               00
@@ -661,7 +750,10 @@
           </div>
 
 
-          <div class="countdown-item reveal" data-reveal>
+          <div
+            class="countdown-item reveal"
+            data-reveal
+          >
 
             <strong id="seconds">
               00
@@ -703,15 +795,17 @@
 
     <section class="actions-section section">
 
-      <div class="actions-heading reveal" data-reveal>
+      <div
+        class="actions-heading reveal"
+        data-reveal
+      >
 
         <span>
           خدمات العدد
         </span>
 
         <h2>
-          احتفظ بالخبر
-          وشاركه
+          احتفظ بالخبر وشاركه
         </h2>
 
       </div>
@@ -743,7 +837,10 @@
           </div>
 
 
-          <svg viewBox="0 0 24 24" aria-hidden="true">
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
 
             <rect
               x="4"
@@ -784,7 +881,10 @@
           </div>
 
 
-          <svg viewBox="0 0 24 24" aria-hidden="true">
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
 
             <circle cx="18" cy="5" r="2.5"/>
 
@@ -804,23 +904,31 @@
 
 
     <!-- =================================================
-         FINAL PAGE
+         FINAL
     ================================================== -->
 
     <section class="final-page section">
 
       <div class="final-paper">
 
-        <span class="final-label reveal" data-reveal>
+        <span
+          class="final-label reveal"
+          data-reveal
+        >
           نهاية العدد
         </span>
 
-        <h2 class="reveal" data-reveal>
-          نلقاكم
-          في الخبر الأجمل
+        <h2
+          class="reveal"
+          data-reveal
+        >
+          نلقاكم في الخبر الأجمل
         </h2>
 
-        <p class="reveal" data-reveal>
+        <p
+          class="reveal"
+          data-reveal
+        >
           حضوركم يزيد أفراحنا سروراً
         </p>
 
