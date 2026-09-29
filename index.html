@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  >
+
+  <meta name="theme-color" content="#ede1cb">
+
+  <meta
+    name="description"
+    content="دعوة حفل حنة حسن - الخبر السعيد"
+  >
+
+  <meta property="og:type" content="website">
+
+  <meta
+    property="og:title"
+    content="الخبر السعيد | حنة حسن"
+  >
+
+  <meta
+    property="og:description"
+    content="أعلن السيد سعد نوري عن إقامة حفل حنة ابنه حسن"
+  >
+
+  <title>الخبر السعيد | حنة حسن</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+  <!-- =====================================================
+       INTRO - NEWSPAPER OPENING
+  ====================================================== -->
+
+  <div
+    class="newspaper-intro"
+    id="newspaperIntro"
+  >
+
+    <div class="intro-shadow"></div>
+
+
+    <div class="folded-paper">
+
+      <div class="fold-half fold-top">
+
+        <div class="fold-line"></div>
+
+        <span class="fold-kicker">
+          إصدار خاص
+        </span>
+
+        <strong>
+          الخبر السعيد
+        </strong>
+
+      </div>
+
+
+      <div class="fold-half fold-bottom">
+
+        <span>
+          خبر يستحق الصفحة الأولى
+        </span>
+
+      </div>
+
+    </div>
+
+
+    <div class="intro-copy">
+
+      <span>
+        العدد الخاص
+      </span>
+
+      <h1>
+        ليلة حنة
+        <strong data-bind="groomName">
+          حسن
+        </strong>
+      </h1>
+
+      <button
+        type="button"
+        id="openPaper"
+        class="open-paper-button"
+      >
+
+        <span>
+          افتح الجريدة
+        </span>
+
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6 12h12M14 7l5 5-5 5"/>
+        </svg>
+
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- =====================================================
+       BACKGROUND
+  ====================================================== -->
+
+  <div class="paper-background" aria-hidden="true">
+
+    <div class="paper-noise"></div>
+
+  </div>
+
+
+  <main>
+
+
+    <!-- =================================================
+         NEWSPAPER HEADER
+    ================================================== -->
+
+    <section class="front-page section">
+
+      <div class="newspaper-sheet">
+
+
+        <!-- TOP BAR -->
+
+        <div class="top-bar">
+
+          <span data-bind="dayName">
+            الجمعة
+          </span>
+
+          <span class="top-bar-center">
+            إصدار خاص
+          </span>
+
+          <span data-bind="dateText">
+            23 أكتوبر 2026
+          </span>
+
+        </div>
+
+
+        <!-- MASTHEAD -->
+
+        <header class="masthead reveal" data-reveal>
+
+          <span class="masthead-small">
+            صحيفة المناسبات السعيدة
+          </span>
+
+          <h1>
+            الخبر السعيد
+          </h1>
+
+          <div class="masthead-rule">
+
+            <span></span>
+
+            <i></i>
+
+            <span></span>
+
+          </div>
+
+          <p>
+            العدد الخاص بليلة الحنة
+          </p>
+
+        </header>
+
+
+        <!-- BREAKING NEWS -->
+
+        <div class="breaking-strip reveal" data-reveal>
+
+          <span>
+            خبر عاجل
+          </span>
+
+          <strong>
+            ليلة فرح جديدة تجمع الأحبة
+          </strong>
+
+        </div>
+
+
+        <!-- MAIN HEADLINE -->
+
+        <article class="main-story">
+
+          <div class="story-label reveal" data-reveal>
+
+            <span>
+              الصفحة الأولى
+            </span>
+
+          </div>
+
+
+          <h2
+            class="main-headline reveal"
+            data-reveal
+          >
+
+            <span data-bind="groomName">
+              حسن
+            </span>
+
+            يحتفل
+            <br>
+
+            بليلة الحنة
+
+          </h2>
+
+
+          <p
+            class="story-subtitle reveal"
+            data-reveal
+          >
+            ليلة تجمع الأهل والأصدقاء
+            في مناسبة ينتظرها الجميع
+          </p>
+
+
+          <div class="headline-meta reveal" data-reveal>
+
+            <span>
+              بقلم هيئة الفرح
+            </span>
+
+            <i></i>
+
+            <span>
+              عدد خاص
+            </span>
+
+          </div>
+
+
+          <div class="story-columns">
+
+            <div class="story-column reveal" data-reveal>
+
+              <p>
+                أعلن
+                <strong>
+                  السيد
+                  <span data-bind="fatherName">
+                    سعد نوري
+                  </span>
+                </strong>
+                عن إقامة حفل حنة ابنه
+                <strong data-bind="groomName">
+                  حسن
+                </strong>
+                في ليلة مميزة تجمع الأهل والأحبة.
+              </p>
+
+            </div>
+
+
+            <div class="story-column reveal" data-reveal>
+
+              <p>
+                ويسره أن يشارك الأصدقاء
+                والأقارب هذه المناسبة السعيدة،
+                على أمل أن يكتمل الفرح
+                بحضوركم ومشاركتكم هذه الليلة.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <blockquote
+            class="story-quote reveal"
+            data-reveal
+          >
+            حضوركم هو الخبر الأجمل في هذه الليلة
+          </blockquote>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =================================================
+         ISSUE DETAILS
+    ================================================== -->
+
+    <section
+      class="issue-section section"
+      id="details"
+    >
+
+      <div class="issue-sheet">
+
+        <div class="issue-heading reveal" data-reveal>
+
+          <span>
+            بيانات العدد
+          </span>
+
+          <h2>
+            تفاصيل الخبر
+          </h2>
+
+        </div>
+
+
+        <div class="issue-grid">
+
+
+          <!-- ISSUE -->
+
+          <article class="issue-item reveal" data-reveal>
+
+            <span class="issue-number">
+              01
+            </span>
+
+            <small>
+              الإصدار
+            </small>
+
+            <strong data-bind="dayName">
+              الجمعة
+            </strong>
+
+          </article>
+
+
+          <!-- DATE -->
+
+          <article class="issue-item reveal" data-reveal>
+
+            <span class="issue-number">
+              02
+            </span>
+
+            <small>
+              التاريخ
+            </small>
+
+            <strong data-bind="dateText">
+              23 أكتوبر 2026
+            </strong>
+
+          </article>
+
+
+          <!-- TIME -->
+
+          <article class="issue-item reveal" data-reveal>
+
+            <span class="issue-number">
+              03
+            </span>
+
+            <small>
+              الوقت
+            </small>
+
+            <strong data-bind="timeText">
+              7:00 مساءً
+            </strong>
+
+          </article>
+
+
+          <!-- LOCATION -->
+
+          <article class="issue-item reveal" data-reveal>
+
+            <span class="issue-number">
+              04
+            </span>
+
+            <small>
+              الموقع
+            </small>
+
+            <strong data-bind="venue">
+              قاعة النخيل
+            </strong>
+
+            <p data-bind="city">
+              بغداد
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =================================================
+         FEATURE DATE
+    ================================================== -->
+
+    <section class="date-feature section">
+
+      <div class="date-newspaper-box">
+
+        <span class="date-feature-label reveal" data-reveal>
+          التاريخ في صدر الصفحة
+        </span>
+
+
+        <div class="date-layout">
+
+          <div class="date-day reveal" data-reveal>
+
+            <span>
+              اليوم
+            </span>
+
+            <strong data-bind="dayName">
+              الجمعة
+            </strong>
+
+          </div>
+
+
+          <div class="date-big reveal" data-reveal>
+
+            <strong data-bind="dateDay">
+              23
+            </strong>
+
+          </div>
+
+
+          <div class="date-month reveal" data-reveal>
+
+            <strong data-bind="dateMonth">
+              أكتوبر
+            </strong>
+
+            <span data-bind="dateYear">
+              2026
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =================================================
+         VENUE STORY
+    ================================================== -->
+
+    <section class="venue-section section">
+
+      <div class="venue-sheet">
+
+        <div class="venue-heading reveal" data-reveal>
+
+          <span>
+            خبر الموقع
+          </span>
+
+          <h2>
+            وجهتكم لهذه الليلة
+          </h2>
+
+        </div>
+
+
+        <div class="venue-content">
+
+          <div class="venue-main reveal" data-reveal>
+
+            <span>
+              تقام المناسبة في
+            </span>
+
+            <h3 data-bind="venue">
+              قاعة النخيل
+            </h3>
+
+            <p data-bind="city">
+              بغداد
+            </p>
+
+          </div>
+
+
+          <div class="venue-address reveal" data-reveal>
+
+            <div class="venue-pin">
+
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+
+                <path
+                  d="M12 21s7-5.3 7-12a7 7 0 1 0-14 0c0 6.7 7 12 7 12Z"
+                />
+
+                <circle cx="12" cy="9" r="2.5"/>
+
+              </svg>
+
+            </div>
+
+            <span data-bind="address">
+              بغداد - شارع فلسطين
+            </span>
+
+          </div>
+
+
+          <a
+            href="#"
+            id="mapButton"
+            class="newspaper-button reveal"
+            data-reveal
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            <span>
+              اقرأ الخبر على الخريطة
+            </span>
+
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h14M14 7l5 5-5 5"/>
+            </svg>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =================================================
+         QUOTE
+    ================================================== -->
+
+    <section class="editorial-section section">
+
+      <div class="editorial-copy reveal" data-reveal>
+
+        <span>
+          كلمة التحرير
+        </span>
+
+        <h2>
+          الأخبار الجميلة
+          تصبح أجمل
+          عندما يشاركها الأحبة
+        </h2>
+
+        <p>
+          ننتظركم لتكونوا جزءاً
+          من هذا العدد الخاص
+          وهذه الليلة السعيدة
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =================================================
+         COUNTDOWN
+    ================================================== -->
+
+    <section class="countdown-section section">
+
+      <div class="countdown-sheet">
+
+        <div class="countdown-heading reveal" data-reveal>
+
+          <span>
+            الوقت المتبقي لصدور الحدث
+          </span>
+
+          <h2>
+            العد التنازلي
+          </h2>
+
+        </div>
+
+
+        <div
+          class="countdown"
+          id="countdown"
+        >
+
+          <div class="countdown-item reveal" data-reveal>
+
+            <strong id="days">
+              00
+            </strong>
+
+            <span>
+              يوم
+            </span>
+
+          </div>
+
+
+          <div class="countdown-item reveal" data-reveal>
+
+            <strong id="hours">
+              00
+            </strong>
+
+            <span>
+              ساعة
+            </span>
+
+          </div>
+
+
+          <div class="countdown-item reveal" data-reveal>
+
+            <strong id="minutes">
+              00
+            </strong>
+
+            <span>
+              دقيقة
+            </span>
+
+          </div>
+
+
+          <div class="countdown-item reveal" data-reveal>
+
+            <strong id="seconds">
+              00
+            </strong>
+
+            <span>
+              ثانية
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <div
+          class="event-started"
+          id="eventStarted"
+          hidden
+        >
+
+          <span>
+            الخبر الآن مباشر
+          </span>
+
+          <strong>
+            حان موعد ليلة الحنة
+          </strong>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =================================================
+         ACTIONS
+    ================================================== -->
+
+    <section class="actions-section section">
+
+      <div class="actions-heading reveal" data-reveal>
+
+        <span>
+          خدمات العدد
+        </span>
+
+        <h2>
+          احتفظ بالخبر
+          وشاركه
+        </h2>
+
+      </div>
+
+
+      <div class="actions-list">
+
+        <button
+          type="button"
+          class="action-row reveal"
+          id="calendarButton"
+          data-reveal
+        >
+
+          <div class="action-code">
+            01
+          </div>
+
+          <div class="action-copy">
+
+            <strong>
+              أضف الموعد إلى التقويم
+            </strong>
+
+            <span>
+              احفظ تاريخ الخبر في جهازك
+            </span>
+
+          </div>
+
+
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+
+            <rect
+              x="4"
+              y="5"
+              width="16"
+              height="15"
+              rx="2"
+            />
+
+            <path d="M8 3v4M16 3v4M4 9h16"/>
+
+          </svg>
+
+        </button>
+
+
+        <button
+          type="button"
+          class="action-row reveal"
+          id="shareButton"
+          data-reveal
+        >
+
+          <div class="action-code">
+            02
+          </div>
+
+          <div class="action-copy">
+
+            <strong>
+              شارك الخبر
+            </strong>
+
+            <span>
+              أرسل الدعوة إلى الأهل والأصدقاء
+            </span>
+
+          </div>
+
+
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+
+            <circle cx="18" cy="5" r="2.5"/>
+
+            <circle cx="6" cy="12" r="2.5"/>
+
+            <circle cx="18" cy="19" r="2.5"/>
+
+            <path d="M8.3 10.8l7.4-4.3M8.3 13.2l7.4 4.3"/>
+
+          </svg>
+
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- =================================================
+         FINAL PAGE
+    ================================================== -->
+
+    <section class="final-page section">
+
+      <div class="final-paper">
+
+        <span class="final-label reveal" data-reveal>
+          نهاية العدد
+        </span>
+
+        <h2 class="reveal" data-reveal>
+          نلقاكم
+          في الخبر الأجمل
+        </h2>
+
+        <p class="reveal" data-reveal>
+          حضوركم يزيد أفراحنا سروراً
+        </p>
+
+
+        <div
+          class="publisher reveal"
+          data-reveal
+        >
+
+          <span>
+            ناشر الدعوة
+          </span>
+
+          <strong data-bind="fatherFull">
+            السيد سعد نوري
+          </strong>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =================================================
+         FOOTER
+    ================================================== -->
+
+    <footer>
+
+      <span>
+        الخبر السعيد
+      </span>
+
+      <i></i>
+
+      <strong data-bind="groomName">
+        حسن
+      </strong>
+
+    </footer>
+
+  </main>
+
+
+  <!-- =====================================================
+       TOAST
+  ====================================================== -->
+
+  <div
+    class="toast"
+    id="toast"
+    role="status"
+    aria-live="polite"
+  >
+
+    <span id="toastText">
+      تم نسخ رابط الدعوة
+    </span>
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
