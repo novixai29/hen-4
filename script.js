@@ -4,7 +4,7 @@
 /* ==========================================================
    الخبر السعيد — HENNA GAZETTE
 
-   غيّر بيانات الزبون من هنا فقط
+   عدّل بيانات الزبون من هنا فقط
 ========================================================== */
 
 const eventConfig = {
@@ -48,9 +48,6 @@ const eventConfig = {
   eventDate:
     "2026-10-23T19:00:00+03:00",
 
-  /*
-    مدة الموعد داخل التقويم
-  */
   eventDurationHours:
     4,
 
@@ -61,8 +58,7 @@ const eventConfig = {
     "https://www.google.com/maps/search/?api=1&query=Baghdad",
 
   /*
-    إذا تركته فارغاً
-    يستخدم رابط الصفحة الحالية
+    إذا بقي فارغاً يستخدم رابط الصفحة الحالية
   */
   invitationUrl:
     "",
@@ -103,7 +99,7 @@ document.addEventListener(
 
 
 /* ==========================================================
-   DATA BINDING
+   DATA
 ========================================================== */
 
 function applyInvitationData() {
@@ -121,7 +117,9 @@ function applyInvitationData() {
         element.dataset.bind;
 
 
-      if (key === "fatherFull") {
+      if (
+        key === "fatherFull"
+      ) {
 
         element.textContent =
           `السيد ${eventConfig.fatherName}`;
@@ -206,12 +204,16 @@ function setupIntro() {
       window.setTimeout(
         () => {
 
-          if (intro.parentNode) {
+          if (
+            intro.parentNode
+          ) {
+
             intro.remove();
+
           }
 
         },
-        1800
+        1750
       );
 
     }
@@ -277,12 +279,17 @@ function setupReveal() {
   const observer =
     new IntersectionObserver(
 
-      (entries, currentObserver) => {
+      (
+        entries,
+        currentObserver
+      ) => {
 
         entries.forEach(
           (entry) => {
 
-            if (!entry.isIntersecting) {
+            if (
+              !entry.isIntersecting
+            ) {
               return;
             }
 
@@ -426,7 +433,9 @@ function setupCountdown() {
       now.getTime();
 
 
-    if (difference <= 0) {
+    if (
+      difference <= 0
+    ) {
 
       daysElement.textContent =
         "00";
@@ -468,7 +477,8 @@ function setupCountdown() {
 
     const days =
       Math.floor(
-        difference / dayMs
+        difference /
+        dayMs
       );
 
 
@@ -553,12 +563,12 @@ function setupCountdown() {
 
 
 /* ==========================================================
-   NUMBER FORMAT
+   FORMAT
 ========================================================== */
 
-function formatNumber(number) {
+function formatNumber(value) {
 
-  return String(number)
+  return String(value)
     .padStart(
       2,
       "0"
@@ -615,17 +625,13 @@ function downloadCalendar() {
   }
 
 
-  const duration =
-    eventConfig.eventDurationHours *
-    60 *
-    60 *
-    1000;
-
-
   const endDate =
     new Date(
       startDate.getTime() +
-      duration
+      eventConfig.eventDurationHours *
+      60 *
+      60 *
+      1000
     );
 
 
@@ -641,7 +647,7 @@ function downloadCalendar() {
     `${eventConfig.calendarDescription}\n${getInvitationUrl()}`;
 
 
-  const icsContent = [
+  const content = [
 
     "BEGIN:VCALENDAR",
 
@@ -680,7 +686,7 @@ function downloadCalendar() {
 
   const blob =
     new Blob(
-      [icsContent],
+      [content],
       {
         type:
           "text/calendar;charset=utf-8"
@@ -739,7 +745,7 @@ function downloadCalendar() {
 
 
 /* ==========================================================
-   ICS HELPERS
+   ICS
 ========================================================== */
 
 function toICSDate(date) {
@@ -824,7 +830,9 @@ async function shareInvitation() {
     `أعلن السيد ${eventConfig.fatherName} عن إقامة حفل حنة ابنه ${eventConfig.groomName}، وذلك ${eventConfig.dayName} ${eventConfig.dateText} الساعة ${eventConfig.timeText} في ${eventConfig.venue}.`;
 
 
-  if (navigator.share) {
+  if (
+    navigator.share
+  ) {
 
     try {
 
